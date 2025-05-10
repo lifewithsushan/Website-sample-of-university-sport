@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - University Sports</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/event-registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Events Hero Section -->
+    <section class="events-hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Upcoming Events</h1>
+            <p>Join us for exciting sports events and competitions throughout the year</p>
+        </div>
+    </section>
+
+    <!-- Events Timeline -->
+    <section class="events-timeline">
+        <div class="timeline-container">
+            <!-- February 2025 -->
+            <div class="event-card" data-aos="fade-up">
+                <div class="event-date">
+                    <span class="month">FEB</span>
+                    <span class="day">15</span>
+                    <span class="year">2025</span>
+                </div>
+                <div class="event-content">
+                    <div class="event-tag">Tournament</div>
+                    <h3>Inter-University Basketball Championship</h3>
+                    <p class="event-description">Annual basketball tournament featuring top university teams competing for the championship title.</p>
+                    <div class="event-details">
+                        <span><i class="fas fa-clock"></i> 9:00 AM - 6:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> University Sports Complex</span>
+                        <span><i class="fas fa-users"></i> 16 Teams</span>
+                    </div>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </div>
+
+            <div class="event-card" data-aos="fade-up">
+                <div class="event-date">
+                    <span class="month">FEB</span>
+                    <span class="day">28</span>
+                    <span class="year">2025</span>
+                </div>
+                <div class="event-content">
+                    <div class="event-tag">Workshop</div>
+                    <h3>Sports Nutrition Masterclass</h3>
+                    <p class="event-description">Learn about proper nutrition for athletes with expert nutritionists and sports dietitians.</p>
+                    <div class="event-details">
+                        <span><i class="fas fa-clock"></i> 2:00 PM - 5:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Sports Science Center</span>
+                        <span><i class="fas fa-user-friends"></i> Limited to 50 participants</span>
+                    </div>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </div>
+
+            <!-- March 2025 -->
+            <div class="event-card" data-aos="fade-up">
+                <div class="event-date">
+                    <span class="month">MAR</span>
+                    <span class="day">10</span>
+                    <span class="year">2025</span>
+                </div>
+                <div class="event-content">
+                    <div class="event-tag">Competition</div>
+                    <h3>Swimming Championship</h3>
+                    <p class="event-description">Annual swimming competition featuring various styles and categories for all skill levels.</p>
+                    <div class="event-details">
+                        <span><i class="fas fa-clock"></i> 8:00 AM - 4:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Olympic Pool</span>
+                        <span><i class="fas fa-trophy"></i> Multiple Categories</span>
+                    </div>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </div>
+
+            <div class="event-card" data-aos="fade-up">
+                <div class="event-date">
+                    <span class="month">MAR</span>
+                    <span class="day">25</span>
+                    <span class="year">2025</span>
+                </div>
+                <div class="event-content">
+                    <div class="event-tag">Tournament</div>
+                    <h3>Tennis Open Championship</h3>
+                    <p class="event-description">Singles and doubles tennis tournament with exciting prizes and professional coaching sessions.</p>
+                    <div class="event-details">
+                        <span><i class="fas fa-clock"></i> 10:00 AM - 7:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Tennis Courts</span>
+                        <span><i class="fas fa-medal"></i> Singles & Doubles</span>
+                    </div>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </div>
+
+            <!-- April 2025 -->
+            <div class="event-card" data-aos="fade-up">
+                <div class="event-date">
+                    <span class="month">APR</span>
+                    <span class="day">05</span>
+                    <span class="year">2025</span>
+                </div>
+                <div class="event-content">
+                    <div class="event-tag">Special Event</div>
+                    <h3>Sports Tech Innovation Summit</h3>
+                    <p class="event-description">Explore the latest in sports technology, featuring demos, talks, and networking opportunities.</p>
+                    <div class="event-details">
+                        <span><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Conference Center</span>
+                        <span><i class="fas fa-microphone"></i> Expert Speakers</span>
+                    </div>
+                    <a href="#" class="register-btn">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Registration Modal -->
+    <div class="event-registration-modal" id="eventRegistrationModal">
+        <div class="registration-form">
+            <button class="close-modal" onclick="closeRegistrationModal()">×</button>
+            <h2>Event Registration</h2>
+            <div class="event-info">
+                <h3 id="modalEventTitle"></h3>
+                <p id="modalEventDate"></p>
+            </div>
+            <form id="eventRegistrationForm" onsubmit="handleRegistrationSubmit(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category...</option>
+                        <option value="student">Student</option>
+                        <option value="faculty">Faculty</option>
+                        <option value="staff">Staff</option>
+                        <option value="alumni">Alumni</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="specialRequirements">Special Requirements or Notes</label>
+                    <textarea id="specialRequirements" name="specialRequirements"></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="form-cancel" onclick="closeRegistrationModal()">Cancel</button>
+                    <button type="submit" class="form-submit">Register Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+    </script>
+    <script src="js/components.js"></script>
+    <script>
+        // Event Registration Modal Functions
+        function openRegistrationModal(eventTitle, eventDate) {
+            const modal = document.getElementById('eventRegistrationModal');
+            const titleElement = document.getElementById('modalEventTitle');
+            const dateElement = document.getElementById('modalEventDate');
+            
+            titleElement.textContent = eventTitle;
+            dateElement.textContent = eventDate;
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeRegistrationModal() {
+            const modal = document.getElementById('eventRegistrationModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function handleRegistrationSubmit(event) {
+            event.preventDefault();
+            // Here you would typically handle the form submission
+            // For now, we'll just close the modal
+            alert('Registration submitted successfully!');
+            closeRegistrationModal();
+        }
+
+        // Update all register buttons to open modal with correct event info
+        document.addEventListener('DOMContentLoaded', function() {
+            const registerButtons = document.querySelectorAll('.register-btn');
+            registerButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const eventCard = this.closest('.event-content');
+                    const eventTitle = eventCard.querySelector('h3').textContent;
+                    const eventDate = this.closest('.event-card').querySelector('.event-date').textContent;
+                    openRegistrationModal(eventTitle, eventDate);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - University Sports Organization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="page-container">
+        <main class="gallery-page">
+            <section class="gallery-header">
+                <h1>Sports Gallery</h1>
+                <p>Capturing moments of excellence and team spirit</p>
+            </section>
+
+
+            <section class="gallery-grid">
+                <div class="gallery-item" data-category="football">
+                    <img src="images/gallery/football.jpg" alt="Football Match">
+                    <div class="gallery-overlay">
+                        <h3>Championship Match</h3>
+                        <p>Final tournament game 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="basketball">
+                    <img src="images/gallery/basketball.jpg" alt="Basketball Game">
+                    <div class="gallery-overlay">
+                        <h3>Basketball Tournament</h3>
+                        <p>Inter-university championship</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="swimming">
+                    <img src="images/gallery/swimming.jpg" alt="Swimming Competition">
+                    <div class="gallery-overlay">
+                        <h3>Swimming Meet</h3>
+                        <p>Annual swimming competition</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/sports-event.jpg" alt="Sports Event">
+                    <div class="gallery-overlay">
+                        <h3>Opening Ceremony</h3>
+                        <p>Sports Week 2024</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="football">
+                    <img src="images/gallery/football-practice.jpg" alt="Football Training">
+                    <div class="gallery-overlay">
+                        <h3>Team Practice</h3>
+                        <p>Pre-season training</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="basketball">
+                    <img src="images/gallery/basketball-practice.jpg" alt="Basketball Practice">
+                    <div class="gallery-overlay">
+                        <h3>Team Training</h3>
+                        <p>Basketball conditioning</p>
+                    </div>
+                </div>
+                <!-- Add more gallery items for variety -->
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/sports-event.jpg" alt="Awards Ceremony">
+                    <div class="gallery-overlay">
+                        <h3>Annual Awards</h3>
+                        <p>Celebrating excellence</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="swimming">
+                    <img src="images/gallery/swimming.jpg" alt="Swimming Practice">
+                    <div class="gallery-overlay">
+                        <h3>Pool Training</h3>
+                        <p>Advanced techniques</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="lightbox">
+                <span class="close-lightbox">&times;</span>
+                <img src="" alt="" class="lightbox-image">
+                <div class="lightbox-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <button class="lightbox-prev">&lt;</button>
+                <button class="lightbox-next">&gt;</button>
+            </div>
+        </main>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

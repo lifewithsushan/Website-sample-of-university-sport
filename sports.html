@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Programs - University Sports Organization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sports.css">
+    <link rel="stylesheet" href="css/join-team.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="sports-page">
+        <!-- Hero Section -->
+        <section class="sports-hero">
+            <div class="hero-content">
+                <h1>Sports Excellence</h1>
+                <p>Where Champions Are Made</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Sports Programs</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Expert Coaches</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Active Athletes</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports Categories -->
+        <section class="sports-categories">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our Sports Categories</h2>
+                <p>Discover your passion in our diverse range of sports programs</p>
+            </div>
+            
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="team">Team Sports</button>
+                <button class="tab-btn" data-category="individual">Individual Sports</button>
+                <button class="tab-btn" data-category="indoor">Indoor Sports</button>
+                <button class="tab-btn" data-category="outdoor">Outdoor Sports</button>
+            </div>
+
+            <div class="sports-grid" data-aos="fade-up">
+                <!-- Team Sports -->
+                <div class="sport-item" data-category="team">
+                    <div class="sport-image">
+                        <img src="images/sports/football.jpg" alt="Football">
+                        <div class="sport-overlay">
+                            <div class="overlay-content">
+                                <h4>Football</h4>
+                                <p>Training Schedule: Mon, Wed, Fri</p>
+                                <a href="#" class="join-btn">Join Team</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sport-content">
+                        <div class="sport-icon"><i class="fas fa-futbol"></i></div>
+                        <h3>Football</h3>
+                        <div class="sport-details">
+                            <span><i class="fas fa-users"></i> 40+ Members</span>
+                            <span><i class="fas fa-trophy"></i> 12 Titles</span>
+                        </div>
+                        <p>Experience the thrill of competitive football with state-of-the-art facilities and professional coaching.</p>
+                        <div class="achievement-badges">
+                            <span class="badge"><i class="fas fa-medal"></i> National Champions</span>
+                            <span class="badge"><i class="fas fa-star"></i> Elite Program</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More sports items following the same pattern -->
+                <div class="sport-item" data-category="individual">
+                    <div class="sport-image">
+                        <img src="images/sports/tennis.jpg" alt="Tennis">
+                        <div class="sport-overlay">
+                            <div class="overlay-content">
+                                <h4>Tennis</h4>
+                                <p>Training Schedule: Tue, Thu, Sat</p>
+                                <a href="#" class="join-btn">Join Team</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sport-content">
+                        <div class="sport-icon"><i class="fas fa-baseball-ball"></i></div>
+                        <h3>Tennis</h3>
+                        <div class="sport-details">
+                            <span><i class="fas fa-users"></i> 25+ Members</span>
+                            <span><i class="fas fa-trophy"></i> 15 Titles</span>
+                        </div>
+                        <p>Master your serve and compete at the highest level with our professional tennis program.</p>
+                        <div class="achievement-badges">
+                            <span class="badge"><i class="fas fa-medal"></i> Regional Champions</span>
+                            <span class="badge"><i class="fas fa-star"></i> Pro Training</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sport-item" data-category="indoor">
+                    <div class="sport-image">
+                        <img src="images/sports/basketball.jpg" alt="Basketball">
+                        <div class="sport-overlay">
+                            <div class="overlay-content">
+                                <h4>Basketball</h4>
+                                <p>Training Schedule: Mon, Wed, Fri</p>
+                                <a href="#" class="join-btn">Join Team</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sport-content">
+                        <div class="sport-icon"><i class="fas fa-basketball-ball"></i></div>
+                        <h3>Basketball</h3>
+                        <div class="sport-details">
+                            <span><i class="fas fa-users"></i> 30+ Members</span>
+                            <span><i class="fas fa-trophy"></i> 8 Titles</span>
+                        </div>
+                        <p>Join our dynamic basketball program and experience the thrill of competitive play.</p>
+                        <div class="achievement-badges">
+                            <span class="badge"><i class="fas fa-medal"></i> State Champions</span>
+                            <span class="badge"><i class="fas fa-star"></i> Elite Squad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sport-item" data-category="indoor">
+                    <div class="sport-image">
+                        <img src="images/sports/badminton.jpg" alt="Badminton">
+                        <div class="sport-overlay">
+                            <div class="overlay-content">
+                                <h4>Badminton</h4>
+                                <p>Training Schedule: Tue, Thu, Sun</p>
+                                <a href="#" class="join-btn">Join Team</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sport-content">
+                        <div class="sport-icon"><i class="fas fa-table-tennis"></i></div>
+                        <h3>Badminton</h3>
+                        <div class="sport-details">
+                            <span><i class="fas fa-users"></i> 20+ Members</span>
+                            <span><i class="fas fa-trophy"></i> 10 Titles</span>
+                        </div>
+                        <p>Perfect your technique and strategy in our state-of-the-art indoor courts.</p>
+                        <div class="achievement-badges">
+                            <span class="badge"><i class="fas fa-medal"></i> National Finalists</span>
+                            <span class="badge"><i class="fas fa-star"></i> Advanced Training</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sport-item" data-category="outdoor">
+                    <div class="sport-image">
+                        <img src="images/sports/cricket.jpg" alt="Cricket">
+                        <div class="sport-overlay">
+                            <div class="overlay-content">
+                                <h4>Cricket</h4>
+                                <p>Training Schedule: Wed, Sat, Sun</p>
+                                <a href="#" class="join-btn">Join Team</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sport-content">
+                        <div class="sport-icon"><i class="fas fa-baseball-ball"></i></div>
+                        <h3>Cricket</h3>
+                        <div class="sport-details">
+                            <span><i class="fas fa-users"></i> 35+ Members</span>
+                            <span><i class="fas fa-trophy"></i> 6 Titles</span>
+                        </div>
+                        <p>Be part of our cricket legacy with professional coaching and world-class facilities.</p>
+                        <div class="achievement-badges">
+                            <span class="badge"><i class="fas fa-medal"></i> League Champions</span>
+                            <span class="badge"><i class="fas fa-star"></i> Premier Division</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Programs -->
+        <section class="featured-programs">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Elite Training Programs</h2>
+                <p>Take your game to the next level</p>
+            </div>
+
+            <div class="programs-showcase">
+                <div class="program-card" data-aos="fade-right">
+                    <div class="program-content">
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <h3>High Performance Training</h3>
+                        </div>
+                        <p>Specialized strength and conditioning programs designed for elite athletes.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Personalized training plans</li>
+                            <li><i class="fas fa-check"></i> Performance monitoring</li>
+                            <li><i class="fas fa-check"></i> Nutrition guidance</li>
+                        </ul>
+                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="program-card" data-aos="fade-right" data-aos-delay="100">
+                    <div class="program-content">
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="fas fa-running"></i>
+                            </div>
+                            <h3>Speed & Agility</h3>
+                        </div>
+                        <p>Enhance your athletic performance with specialized speed training.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Sprint mechanics</li>
+                            <li><i class="fas fa-check"></i> Agility drills</li>
+                            <li><i class="fas fa-check"></i> Reaction training</li>
+                        </ul>
+                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="program-card" data-aos="fade-right" data-aos-delay="200">
+                    <div class="program-content">
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Mental Conditioning</h3>
+                        </div>
+                        <p>Develop mental toughness and competitive mindset.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Stress management</li>
+                            <li><i class="fas fa-check"></i> Focus training</li>
+                            <li><i class="fas fa-check"></i> Performance psychology</li>
+                        </ul>
+                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="program-card" data-aos="fade-right" data-aos-delay="300">
+                    <div class="program-content">
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3>Recovery & Wellness</h3>
+                        </div>
+                        <p>Comprehensive recovery programs for optimal performance.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Injury prevention</li>
+                            <li><i class="fas fa-check"></i> Sports massage</li>
+                            <li><i class="fas fa-check"></i> Recovery protocols</li>
+                        </ul>
+                        <a href="#" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="success-stories">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Success Stories</h2>
+                <p>Meet our champions and their achievements</p>
+            </div>
+
+            <div class="stories-grid">
+                <div class="story-card" data-aos="fade-up">
+                    <div class="story-image">
+                        <img src="images/winners/sarah.jpeg" alt="Sarah Johnson">
+                    </div>
+                    <div class="story-content">
+                        <h3>Sarah Johnson</h3>
+                        <span class="sport-type">Swimming</span>
+                        <p>"The university's swimming program transformed me into a national champion. The coaches here are world-class!"</p>
+                        <div class="achievements">
+                            <span><i class="fas fa-medal"></i> Olympic Qualifier 2024</span>
+                            <span><i class="fas fa-trophy"></i> National Record Holder</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="story-image">
+                        <img src="images/winners/chang.jpg" alt="Michael Chang">
+                    </div>
+                    <div class="story-content">
+                        <h3>Michael Chang</h3>
+                        <span class="sport-type">Basketball</span>
+                        <p>"From a rookie to team captain, the basketball program here shaped my career and leadership skills."</p>
+                        <div class="achievements">
+                            <span><i class="fas fa-medal"></i> State MVP 2024</span>
+                            <span><i class="fas fa-trophy"></i> All-Star Team</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="story-image">
+                        <img src="images/winners/emma.jpg" alt="Emma Wilson">
+                    </div>
+                    <div class="story-content">
+                        <h3>Emma Wilson</h3>
+                        <span class="sport-type">Tennis</span>
+                        <p>"The elite training program and world-class facilities helped me achieve my dream of becoming a professional player."</p>
+                        <div class="achievements">
+                            <span><i class="fas fa-medal"></i> International Champion</span>
+                            <span><i class="fas fa-trophy"></i> University Sports Icon</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Showcase -->
+
+        <!-- Join CTA Section -->
+        <section class="join-sports">
+            <div class="join-content" data-aos="fade-up">
+                <h2>Begin Your Journey to Excellence</h2>
+                <p>Join our sports programs and become part of our winning legacy</p>
+                <div class="cta-buttons">
+                    <a href="membership.html" class="cta-button primary">Join Now</a>
+                    <a href="contact.html" class="cta-button secondary">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Join Team Modal -->
+    <div class="join-team-modal" id="joinTeamModal">
+        <div class="join-team-form">
+            <button class="close-modal" onclick="closeJoinTeamModal()">×</button>
+            <h2>Join Our Team</h2>
+            <form id="joinTeamForm" onsubmit="handleJoinTeamSubmit(event)">
+                <div class="form-group">
+                    <label for="teamName">Select Team</label>
+                    <select id="teamName" name="teamName" required>
+                        <option value="">Select a team...</option>
+                        <option value="football">Football</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="badminton">Badminton</option>
+                        <option value="swimming">Swimming</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="playerName">Full Name</label>
+                    <input type="text" id="playerName" name="playerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="playerEmail">Email</label>
+                    <input type="email" id="playerEmail" name="playerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="playerPhone">Phone Number</label>
+                    <input type="tel" id="playerPhone" name="playerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Previous Experience</label>
+                    <textarea id="experience" name="experience" required></textarea>
+                </div>
+                <div class="form-buttons">
+                    <button type="button" class="form-cancel" onclick="closeJoinTeamModal()">Cancel</button>
+                    <button type="submit" class="form-submit">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/sports.js"></script>
+    <script>
+        // Join Team Modal Functions
+        function openJoinTeamModal(teamName) {
+            const modal = document.getElementById('joinTeamModal');
+            const teamSelect = document.getElementById('teamName');
+            modal.classList.add('active');
+            if (teamName) {
+                teamSelect.value = teamName.toLowerCase();
+            }
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeJoinTeamModal() {
+            const modal = document.getElementById('joinTeamModal');
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function handleJoinTeamSubmit(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            // Here you would typically send this data to your backend
+            console.log('Form submitted:', data);
+            
+            // Show success message
+            alert('Thank you for your application! We will contact you soon.');
+            closeJoinTeamModal();
+            event.target.reset();
+        }
+
+        // Update all join buttons to open modal with correct team
+        document.addEventListener('DOMContentLoaded', function() {
+            const joinButtons = document.querySelectorAll('.join-btn');
+            joinButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const sportItem = this.closest('.sport-item');
+                    const teamName = sportItem.querySelector('h3').textContent;
+                    openJoinTeamModal(teamName);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

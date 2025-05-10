@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities - University Sports Organization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/facilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="facilities-page">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="animate-fade-in">Our Facilities</h1>
+                <p class="animate-fade-in">World-class sports facilities for champions</p>
+            </div>
+        </section>
+
+        <section class="facilities-overview">
+            <div class="container">
+                <h2 class="section-title">Explore Our Facilities</h2>
+                <div class="facilities-grid">
+                    <div class="facility-card animate-slide-up" data-facility="gym">
+                        <div class="facility-image">
+                            <img src="images/facilities/modern-gym.jpg" alt="Modern Gym" loading="lazy">
+                            <div class="facility-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                        <div class="facility-info">
+                            <h3>Modern Gym</h3>
+                            <p>State-of-the-art equipment and training areas</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card animate-slide-up" data-facility="pool" data-delay="200">
+                        <div class="facility-image">
+                            <img src="images/facilities/swimming3.jpg" alt="Swimming Pool" loading="lazy">
+                            <div class="facility-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                        <div class="facility-info">
+                            <h3>Olympic Pool</h3>
+                            <p>50m pool with professional diving boards</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card animate-slide-up" data-facility="courts" data-delay="400">
+                        <div class="facility-image">
+                            <img src="images/facilities/sports courts.jpg" alt="Sports Courts" loading="lazy">
+                            <div class="facility-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                        <div class="facility-info">
+                            <h3>Indoor Courts</h3>
+                            <p>Multiple courts for basketball, volleyball, and badminton</p>
+                        </div>
+                    </div>
+
+                    <div class="facility-card animate-slide-up" data-facility="field" data-delay="600">
+                        <div class="facility-image">
+                            <img src="images/facilities/sports field.jpg" alt="Sports Field" loading="lazy">
+                            <div class="facility-overlay">
+                                <span class="view-details">View Details</span>
+                            </div>
+                        </div>
+                        <div class="facility-info">
+                            <h3>Sports Field</h3>
+                            <p>Professional football and athletics track</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="facility-features">
+            <div class="container">
+                <h2 class="section-title">Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card animate-fade-in">
+                        <div class="icon">🔧</div>
+                        <h3>Modern Equipment</h3>
+                        <p>Latest sports and training equipment</p>
+                    </div>
+                    <div class="feature-card animate-fade-in" data-delay="200">
+                        <div class="icon">👥</div>
+                        <h3>Professional Staff</h3>
+                        <p>Experienced trainers and maintenance team</p>
+                    </div>
+                    <div class="feature-card animate-fade-in" data-delay="400">
+                        <div class="icon">🏆</div>
+                        <h3>Competition Ready</h3>
+                        <p>Facilities meet international standards</p>
+                    </div>
+                    <div class="feature-card animate-fade-in" data-delay="600">
+                        <div class="icon">🔒</div>
+                        <h3>Secure Access</h3>
+                        <p>24/7 security and member access</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section">
+            <div class="container">
+                <h2 class="section-title">Facility Booking</h2>
+                <div class="booking-content">
+                    <div class="booking-info animate-slide-right">
+                        <h3>How to Book</h3>
+                        <ul class="booking-steps">
+                            <li>
+                                <span class="step-number">1</span>
+                                <p>Choose your desired facility</p>
+                            </li>
+                            <li>
+                                <span class="step-number">2</span>
+                                <p>Select available time slot</p>
+                            </li>
+                            <li>
+                                <span class="step-number">3</span>
+                                <p>Confirm your booking</p>
+                            </li>
+                            <li>
+                                <span class="step-number">4</span>
+                                <p>Receive confirmation</p>
+                            </li>
+                        </ul>
+                        <button class="book-now-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facility Details Modal -->
+        <div class="facility-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="facility-details">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking Modal -->
+        <div class="booking-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Book a Facility</h2>
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="facility">Facility</label>
+                        <select id="facility" name="facility" required>
+                            <option value="">Select a facility</option>
+                            <option value="gym">Modern Gym</option>
+                            <option value="pool">Olympic Pool</option>
+                            <option value="courts">Indoor Courts</option>
+                            <option value="field">Sports Field</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duration (hours)</label>
+                        <select id="duration" name="duration" required>
+                            <option value="1">1 hour</option>
+                            <option value="2">2 hours</option>
+                            <option value="3">3 hours</option>
+                            <option value="4">4 hours</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/facilities.js"></script>
+</body>
+</html>

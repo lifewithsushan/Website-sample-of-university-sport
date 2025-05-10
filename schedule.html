@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule - University Sports Organization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="schedule-page">
+        <section class="schedule-header">
+            <h1>Sports Schedule</h1>
+            <p>Stay updated with all our sports events and matches</p>
+        </section>
+
+        <section class="schedule-controls scroll-animate">
+            <div class="schedule-navigation">
+                <button id="prevMonth" class="nav-btn">&lt;</button>
+                <h2 id="currentMonth">February 2025</h2>
+                <button id="nextMonth" class="nav-btn">&gt;</button>
+            </div>
+            <div class="view-options">
+                <button class="view-btn active" data-view="month">Month</button>
+                <button class="view-btn" data-view="week">Week</button>
+                <button class="view-btn" data-view="list">List</button>
+            </div>
+            <div class="filter-options">
+                <select id="sportFilter" class="sport-filter">
+                    <option value="all">All Sports</option>
+                    <option value="football">Football</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="swimming">Swimming</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="calendar-container scroll-animate">
+            <div class="calendar-header">
+                <div class="weekday">Sunday</div>
+                <div class="weekday">Monday</div>
+                <div class="weekday">Tuesday</div>
+                <div class="weekday">Wednesday</div>
+                <div class="weekday">Thursday</div>
+                <div class="weekday">Friday</div>
+                <div class="weekday">Saturday</div>
+            </div>
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Calendar days will be dynamically generated -->
+            </div>
+        </section>
+
+        <section class="event-list scroll-animate" id="eventList">
+            <!-- Events will be dynamically generated -->
+        </section>
+
+        <!-- Event Details Modal -->
+        <div class="event-modal">
+            <div class="modal-content scroll-animate">
+                <span class="close-modal">&times;</span>
+                <div class="event-details">
+                    <div class="event-header">
+                        <h2 class="event-title"></h2>
+                        <p class="event-date"></p>
+                    </div>
+                    <div class="event-info">
+                        <div class="info-item">
+                            <span class="icon">⏰</span>
+                            <span class="time"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">📍</span>
+                            <span class="location"></span>
+                        </div>
+                        <div class="info-item">
+                            <span class="icon">🏆</span>
+                            <span class="category"></span>
+                        </div>
+                    </div>
+                    <div class="event-description"></div>
+                    <div class="team-info">
+                        <div class="home-team">
+                            <h3>Home Team</h3>
+                            <img src="" alt="" class="team-logo">
+                            <p class="team-name"></p>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="away-team">
+                            <h3>Away Team</h3>
+                            <img src="" alt="" class="team-logo">
+                            <p class="team-name"></p>
+                        </div>
+                    </div>
+                    <div class="event-actions">
+                        <button class="action-btn add-calendar">Add to Calendar</button>
+                        <button class="action-btn share-event">Share Event</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Week View Template -->
+        <template id="weekViewTemplate">
+            <div class="week-view">
+                <div class="time-column">
+                    <!-- Time slots will be generated -->
+                </div>
+                <div class="week-grid">
+                    <!-- Week events will be generated -->
+                </div>
+            </div>
+        </template>
+
+        <!-- List View Template -->
+        <template id="listViewTemplate">
+            <div class="list-view">
+                <div class="list-header">
+                    <span>Date</span>
+                    <span>Time</span>
+                    <span>Event</span>
+                    <span>Location</span>
+                </div>
+                <div class="list-body">
+                    <!-- List items will be generated -->
+                </div>
+            </div>
+        </template>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/schedule.js"></script>
+</body>
+</html>

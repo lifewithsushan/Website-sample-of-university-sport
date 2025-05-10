@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - University Sports Organization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/teams.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="teams-page">
+        <section class="teams-header">
+            <h1>Our Teams</h1>
+            <p>Meet our championship-winning university sports teams</p>
+        </section>
+
+        <section class="teams-filter scroll-animate">
+            <button class="filter-btn active" data-team="all">All Teams</button>
+            <button class="filter-btn" data-team="football">Football</button>
+            <button class="filter-btn" data-team="basketball">Basketball</button>
+            <button class="filter-btn" data-team="swimming">Swimming</button>
+        </section>
+
+        <section class="teams-grid">
+            <!-- Football Teams -->
+            <div class="team-card scroll-animate" data-team="football">
+                <div class="team-image">
+                    <img src="images/teams/football.jpg" alt="Football Team">
+                    <div class="team-overlay">
+                        <span class="wins">Wins: 15</span>
+                        <span class="losses">Losses: 3</span>
+                    </div>
+                </div>
+                <div class="team-info"> 
+                    <h3>University Football Team</h3>
+                    <p class="team-division">Division A</p>
+                    <div class="team-stats">
+                        <div class="stat">
+                            <span class="stat-value">2nd</span>
+                            <span class="stat-label">League Position</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">45</span>
+                            <span class="stat-label">Goals Scored</span>
+                        </div>
+                    </div>
+                    <button class="view-team-btn">View Team Details</button>
+                </div>
+            </div>
+
+            <!-- Basketball Teams -->
+            <div class="team-card scroll-animate" data-team="basketball">
+                <div class="team-image">
+                    <img src="images/teams/basketball.jpg" alt="Basketball Team"/>
+                    <div class="team-overlay">
+                        <span class="wins">Wins: 12</span>
+                        <span class="losses">Losses: 4</span>
+                    </div>
+                </div>
+                <div class="team-info">
+                    <h3>University Basketball Team</h3>
+                    <p class="team-division">Division A</p>
+                    <div class="team-stats">
+                        <div class="stat">
+                            <span class="stat-value">1st</span>
+                            <span class="stat-label">League Position</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">890</span>
+                            <span class="stat-label">Points Scored</span>
+                        </div>
+                    </div>
+                    <button class="view-team-btn">View Team Details</button>
+                </div>
+            </div>
+
+            <!-- Swimming Teams -->
+            <div class="team-card scroll-animate" data-team="swimming">
+                <div class="team-image">
+                    <img src="images/teams/swimming.jpg" alt="Swimming Team"/>
+                    <div class="team-overlay">
+                        <span class="wins">Medals: 8</span>
+                        <span class="records">Records: 3</span>
+                    </div>
+                </div>
+                <div class="team-info">
+                    <h3>University Swimming Team</h3>
+                    <p class="team-division">Division A</p>
+                    <div class="team-stats">
+                        <div class="stat">
+                            <span class="stat-value">1st</span>
+                            <span class="stat-label">Overall Ranking</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">15</span>
+                            <span class="stat-label">Total Medals</span>
+                        </div>
+                    </div>
+                    <button class="view-team-btn">View Team Details</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Details Modal -->
+        <div class="team-modal">
+            <div class="modal-content scroll-animate">
+                <span class="close-modal">&times;</span>
+                <div class="modal-header">
+                    <h2></h2>
+                    <p class="team-division"></p>
+                </div>
+                <div class="modal-body">
+                    <div class="team-overview">
+                        <img src="" alt="" class="team-photo">
+                        <div class="team-details">
+                            <h3>Team Overview</h3>
+                            <p class="team-description"></p>
+                        </div>
+                    </div>
+                    <div class="team-achievements">
+                        <h3>Recent Achievements</h3>
+                        <ul class="achievements-list">
+                        </ul>
+                    </div>
+                    <div class="team-schedule">
+                        <h3>Upcoming Matches</h3>
+                        <div class="schedule-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/teams.js"></script>
+</body>
+</html>

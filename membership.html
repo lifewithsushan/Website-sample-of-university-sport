@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - University Sports Organization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/membership.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="membership-page">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="animate-fade-in">Join UniSports</h1>
+                <p class="animate-fade-in">Be part of our thriving sports community</p>
+            </div>
+        </section>
+
+        <section class="membership-plans">
+            <div class="container">
+                <h2 class="section-title">Membership Plans</h2>
+                <div class="plans-grid">
+                    <div class="plan-card animate-slide-up">
+                        <div class="plan-header">
+                            <h3>Basic</h3>
+                            <div class="price">$30<span>/month</span></div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li>Access to gym facilities</li>
+                                <li>Basic training programs</li>
+                                <li>Access to one sport</li>
+                                <li>Locker access</li>
+                                <li>Personal trainer</li>
+
+                            </ul>
+                        </div>
+                        <button class="select-plan-btn">Select Plan</button>
+                    </div>  
+
+                    <div class="plan-card featured animate-slide-up" data-delay="200">
+                        <div class="plan-header">
+                            <div class="featured-tag">Most Popular</div>
+                            <h3>Premium</h3>
+                            <div class="price">$50<span>/month</span></div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li>All Basic features</li>
+                                <li>Access to all sports</li>
+                                <li>Personal trainer (2x/month)</li>
+                                <li>Priority booking</li>
+                                <li>Free gear rental</li>
+                            </ul>
+                        </div>
+                        <button class="select-plan-btn">Select Plan</button>
+                    </div>
+
+                    <div class="plan-card animate-slide-up" data-delay="400">
+                        <div class="plan-header">
+                            <h3>Elite</h3>
+                            <div class="price">$80<span>/month</span></div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li>All Premium features</li>
+                                <li>Unlimited personal training</li>
+                                <li>Nutrition consultation</li>
+                                <li>VIP event access</li>
+                                <li>Premium gear provided</li>
+                            </ul>
+                        </div>
+                        <button class="select-plan-btn">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="container">
+                <h2 class="section-title">Member Benefits</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card animate-fade-in">
+                        <div class="icon">🏆</div>
+                        <h3>Professional Training</h3>
+                        <p>Access to certified trainers and structured programs</p>
+                    </div>
+                    <div class="benefit-card animate-fade-in" data-delay="200">
+                        <div class="icon">💪</div>
+                        <h3>Modern Facilities</h3>
+                        <p>State-of-the-art equipment and facilities</p>
+                    </div>
+                    <div class="benefit-card animate-fade-in" data-delay="400">
+                        <div class="icon">🤝</div>
+                        <h3>Community Events</h3>
+                        <p>Regular social events and competitions</p>
+                    </div>
+                    <div class="benefit-card animate-fade-in" data-delay="600">
+                        <div class="icon">🎯</div>
+                        <h3>Goal Tracking</h3>
+                        <p>Personal progress monitoring and support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-process">
+            <div class="container">
+                <h2 class="section-title">How to Join</h2>
+                <div class="steps-grid">
+                    <div class="step-card animate-slide-right">
+                        <div class="step-number">1</div>
+                        <h3>Choose Plan</h3>
+                        <p>Select a membership plan that suits your needs</p>
+                    </div>
+                    <div class="step-card animate-slide-right" data-delay="200">
+                        <div class="step-number">2</div>
+                        <h3>Register</h3>
+                        <p>Fill out the registration form with your details</p>
+                    </div>
+                    <div class="step-card animate-slide-right" data-delay="400">
+                        <div class="step-number">3</div>
+                        <h3>Medical Check</h3>
+                        <p>Complete a basic fitness assessment</p>
+                    </div>
+                    <div class="step-card animate-slide-right" data-delay="600">
+                        <div class="step-number">4</div>
+                        <h3>Start Training</h3>
+                        <p>Begin your journey to fitness excellence</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Modal -->
+        <div class="registration-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Register for Membership</h2>
+                <form id="registrationForm" class="registration-form">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="plan">Selected Plan</label>
+                        <input type="text" id="plan" name="plan" readonly>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Registration</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/membership.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - University Sports Organization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main class="contact-page">
+        <section class="contact-header">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our sports organization</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-info-contact">
+                <div class="info-item">
+                    <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                    <p>New Baneshwor, </p>
+                    <p>Kathmandu</p>
+                    <p>Nepal</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fas fa-phone"></i> Contact Details</h3>
+                    <p>Phone: +977 9801317733</p>
+                    <p>Email: info@techspire.edu.np</p>
+                </div>
+                <div class="info-item">
+                    <h3><i class="fas fa-clock"></i> Office Hours</h3>
+                    <p>Sunday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <h2>Send us a message</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </section>
+
+        <section class="map-section">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.9666125649997!2d85.33237997529994!3d27.687426776193973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x23bb4647745b3c5%3A0x188d79956864ba46!2sTechspire%20College!5e0!3m2!1sne!2snp!4v1739006792157!5m2!1sne!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="social-section">
+            <h2>Connect With Us</h2>
+            <div class="social-grid">
+                <div class="social-item">
+                    <i class="fab fa-facebook"></i>
+                    <h3>Facebook</h3>
+                    <p>Follow us for daily updates</p>
+                    <a href="#" target="_blank">@unisports</a>
+                </div>
+                <div class="social-item">
+                    <i class="fab fa-twitter"></i>
+                    <h3>Twitter</h3>
+                    <p>Latest news and announcements</p>
+                    <a href="#" target="_blank">@unisports</a>
+                </div>
+                <div class="social-item">
+                    <i class="fab fa-instagram"></i>
+                    <h3>Instagram</h3>
+                    <p>Behind the scenes content</p>
+                    <a href="#" target="_blank">@unisports</a>
+                </div>
+                <div class="social-item">
+                    <i class="fab fa-youtube"></i>
+                    <h3>YouTube</h3>
+                    <p>Watch our event highlights</p>
+                    <a href="#" target="_blank">UniSports Channel</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
